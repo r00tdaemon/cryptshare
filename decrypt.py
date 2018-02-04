@@ -17,16 +17,24 @@ def aes_decrypt(key: bytes, data: bytes):
     return cipher.decrypt(message)
 
 
-def decrypt(private_key, file_path):
+def decrypt(private_key: bytes, file_path: str):
     private_key = RSA.importKey(private_key)
     key_size = (private_key.size() + 1) // 8
 
-    with open(file_path, "rb") as f:
-        enc_key = f.read(key_size)
-        enc_data = f.read()
+    try:
+        with open(file_path, "rb") as f:
+            enc_key = f.read(key_size)
+            enc_data = f.read()
+    except FileNotFoundError:
+        return "File does not exist"
+    try:
+        key = rsa_decrypt(enc_key, private_key)
+    except ValueError:
+        return "Could not decrypt the key"
 
-    key = rsa_decrypt(enc_key, private_key)
     data = aes_decrypt(key, enc_data)
 
     with open(os.path.splitext(file_path)[0], "wb") as f:
         f.write(data)
+
+    return "Decrypted successfully"
