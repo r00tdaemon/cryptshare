@@ -101,7 +101,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton">
+           <widget class="QPushButton" name="serve_btn">
             <property name="maximumSize">
              <size>
               <width>16777214</width>

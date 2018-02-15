@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/tmp/main_windowX19383.ui'
+# Form implementation generated from reading ui file '/tmp/main_windows10585.ui'
 #
 # Created by: PyQt5 UI code generator 5.9
 #
@@ -51,10 +51,10 @@ class Ui_MainWindow(object):
         self.encrypt_btn.setMaximumSize(QtCore.QSize(16777210, 16777211))
         self.encrypt_btn.setObjectName("encrypt_btn")
         self.horizontalLayout_3.addWidget(self.encrypt_btn)
-        self.pushButton = QtWidgets.QPushButton(self.tab)
-        self.pushButton.setMaximumSize(QtCore.QSize(16777214, 16777214))
-        self.pushButton.setObjectName("pushButton")
-        self.horizontalLayout_3.addWidget(self.pushButton)
+        self.serve_btn = QtWidgets.QPushButton(self.tab)
+        self.serve_btn.setMaximumSize(QtCore.QSize(16777214, 16777214))
+        self.serve_btn.setObjectName("serve_btn")
+        self.horizontalLayout_3.addWidget(self.serve_btn)
         self.verticalLayout_2.addLayout(self.horizontalLayout_3)
         self.tabWidget.addTab(self.tab, "")
         self.tab_2 = QtWidgets.QWidget()
@@ -100,7 +100,7 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "Browse File:"))
         self.browse_btn.setText(_translate("MainWindow", "Browse"))
         self.encrypt_btn.setText(_translate("MainWindow", "Encrypt"))
-        self.pushButton.setText(_translate("MainWindow", "Serve on Tor"))
+        self.serve_btn.setText(_translate("MainWindow", "Serve on Tor"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Send"))
         self.label_3.setText(_translate("MainWindow", "Enter Private Key:"))
         self.label_4.setText(_translate("MainWindow", "Browse File:"))
