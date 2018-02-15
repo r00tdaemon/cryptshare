@@ -31,12 +31,12 @@ class Window(QtWidgets.QMainWindow, Ui_MainWindow):
     def encrypt_file(self):
         pub_key = self.pubkey_textedit.toPlainText().encode()
         result = encrypt.encrypt(pub_key, self.filepath_ledit.text())
-        QtWidgets.QMessageBox.about(self, "Result", result)
+        QtWidgets.QMessageBox.information(self, "Result", result)
 
     def decrypt_file(self):
         priv_key = self.privkey_textedit_tab2.toPlainText().encode()
         result = decrypt.decrypt(priv_key, self.filepath_ledit_tab2.text())
-        QtWidgets.QMessageBox.about(self, "Result", result)
+        QtWidgets.QMessageBox.information(self, "Result", result)
 
 
 if __name__ == '__main__':

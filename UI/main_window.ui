@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>708</width>
-    <height>485</height>
+    <width>831</width>
+    <height>716</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -24,7 +24,7 @@
     <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -43,7 +43,7 @@
           <property name="maximumSize">
            <size>
             <width>16777215</width>
-            <height>307</height>
+            <height>538</height>
            </size>
           </property>
          </widget>
@@ -61,10 +61,23 @@
            <enum>QLayout::SetDefaultConstraint</enum>
           </property>
           <item>
-           <widget class="QLineEdit" name="filepath_ledit"/>
+           <widget class="QLineEdit" name="filepath_ledit">
+            <property name="maximumSize">
+             <size>
+              <width>16777214</width>
+              <height>16777214</height>
+             </size>
+            </property>
+           </widget>
           </item>
           <item>
            <widget class="QPushButton" name="browse_btn">
+            <property name="maximumSize">
+             <size>
+              <width>16777213</width>
+              <height>16777214</height>
+             </size>
+            </property>
             <property name="text">
              <string>Browse</string>
             </property>
@@ -73,11 +86,34 @@
          </layout>
         </item>
         <item>
-         <widget class="QPushButton" name="encrypt_btn">
-          <property name="text">
-           <string>Encrypt</string>
-          </property>
-         </widget>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QPushButton" name="encrypt_btn">
+            <property name="maximumSize">
+             <size>
+              <width>16777210</width>
+              <height>16777211</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Encrypt</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="maximumSize">
+             <size>
+              <width>16777214</width>
+              <height>16777214</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Serve on Tor</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
        </layout>
       </widget>
@@ -98,7 +134,7 @@
           <property name="maximumSize">
            <size>
             <width>16777215</width>
-            <height>307</height>
+            <height>538</height>
            </size>
           </property>
          </widget>
@@ -113,7 +149,14 @@
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_2">
           <item>
-           <widget class="QLineEdit" name="filepath_ledit_tab2"/>
+           <widget class="QLineEdit" name="filepath_ledit_tab2">
+            <property name="maximumSize">
+             <size>
+              <width>16777214</width>
+              <height>16777214</height>
+             </size>
+            </property>
+           </widget>
           </item>
           <item>
            <widget class="QPushButton" name="browse_btn_tab2">
@@ -126,6 +169,12 @@
         </item>
         <item>
          <widget class="QPushButton" name="decrypt_btn_tab2">
+          <property name="maximumSize">
+           <size>
+            <width>16777214</width>
+            <height>16777214</height>
+           </size>
+          </property>
           <property name="text">
            <string>Decrypt</string>
           </property>
